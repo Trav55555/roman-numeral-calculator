@@ -8,24 +8,7 @@ A command-line utility for converting between Roman numerals and integers.
 - Convert integers to Roman numerals
 - Convert Roman numerals to integers
 - Input validation and error handling
-- Simple, user-friendly interface
 
-## Installation
-
-1. Download the script:
-   ```
-   curl -O https://raw.githubusercontent.com/yourusername/roman-numerals-cli/main/roman_cli.py
-   ```
-
-2. Make it executable:
-   ```
-   chmod +x roman_cli.py
-   ```
-
-3. Optionally, move it to your PATH for global access:
-   ```
-   sudo mv roman_cli.py /usr/local/bin/roman
-   ```
 
 ## Usage
 
