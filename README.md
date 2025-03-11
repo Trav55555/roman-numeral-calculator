@@ -8,50 +8,49 @@ A command-line utility for converting between Roman numerals and integers.
 - Convert Roman numerals to integers
 - Input validation and error handling
 
-
 ## Usage
 
 ### Converting Integers to Roman Numerals
 
 ```
-./roman_cli.py -t NUMBER
+python roman_converter.py -t NUMBER
 ```
 
 or using the long option:
 
 ```
-./roman_cli.py --to-roman NUMBER
+python roman_converter.py --to-roman NUMBER
 ```
 
 Example:
 ```
-$ ./roman_cli.py -t 1984
+$ python roman_converter.py -t 1984
 MCMLXXXIV
 ```
 
 ### Converting Roman Numerals to Integers
 
 ```
-./roman_cli.py -f ROMAN_NUMERAL
+python roman_converter.py -f ROMAN_NUMERAL
 ```
 
 or using the long option:
 
 ```
-./roman_cli.py --from-roman ROMAN_NUMERAL
+python roman_converter.py --from-roman ROMAN_NUMERAL
 ```
 
 Example:
 ```
-$ ./roman_cli.py -f MCMLXXXIV
+$ python roman_converter.py -f MCMLXXXIV
 1984
 ```
 
 ### Getting Help
 
 ```
-$ ./roman_cli.py --help
-usage: roman_cli.py [-h] (-t TO_ROMAN | -f FROM_ROMAN)
+$ python roman_converter.py --help
+usage: roman_converter.py [-h] (-t TO_ROMAN | -f FROM_ROMAN)
 
 Convert between Roman numerals and integers
 
@@ -91,13 +90,13 @@ The conversion uses the standard Roman numeral system:
 ## Examples
 
 ```
-$ ./roman_cli.py -t 42
+$ python roman_converter.py -t 42
 XLII
 
-$ ./roman_cli.py -f CDXLIV
+$ python roman_converter.py -f CDXLIV
 444
 
-$ ./roman_cli.py -t 3999
+$ python roman_converter.py -t 3999
 MMMCMXCIX
 ```
 
@@ -106,13 +105,13 @@ MMMCMXCIX
 The script provides clear error messages for invalid inputs:
 
 ```
-$ ./roman_cli.py -t 0
+$ python roman_converter.py -t 0
 Error: Integer must be between 1 and 3999
 
-$ ./roman_cli.py -t 4000
+$ python roman_converter.py -t 4000
 Error: Integer must be between 1 and 3999
 
-$ ./roman_cli.py -f IIIIV
+$ python roman_converter.py -f IIIIV
 Error: Invalid Roman numeral. Valid characters are I, V, X, L, C, D, M
 ```
 
