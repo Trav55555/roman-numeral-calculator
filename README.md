@@ -1,4 +1,3 @@
-# roman-numeral-calculator
 # Roman Numerals CLI Tool
 
 A command-line utility for converting between Roman numerals and integers.
